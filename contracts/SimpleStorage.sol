@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.19; // First, specify the version of solidity you are goind to use
+pragma solidity 0.8.18; // First, specify the version of solidity you are goind to use
 
 // our contract
 contract SimpleStorage {
@@ -41,4 +41,16 @@ contract SimpleStorage {
         listOfPeople.push(Person(_favoriteNumber, _name));
         nameToFavoriteNumber[_name] = _favoriteNumber;
     } 
+}
+
+contract SimpleStorage2 {
+
+}
+
+contract SimpleStorage3 {
+    
+}
+
+contract SimpleStorage4 {
+
 }
