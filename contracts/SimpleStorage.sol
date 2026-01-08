@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.18; // First, specify the version of solidity you are goind to use
+pragma solidity 0.8.24; // First, specify the version of solidity you are goind to use
 
 // our contract
 contract SimpleStorage {
