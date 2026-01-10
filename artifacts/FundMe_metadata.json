@@ -6,56 +6,21 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_favoriteNumber",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					}
-				],
-				"name": "addPerson",
+				"inputs": [],
+				"name": "fund",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "ethAmount",
 						"type": "uint256"
 					}
 				],
-				"name": "listOfPeople",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "favoriteNumber",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"name": "nameToFavoriteNumber",
+				"name": "getConversionRate",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -68,7 +33,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "retrieve",
+				"name": "getPrice",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -80,16 +45,29 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getVersion",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "_favoriteNumber",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "store",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minimumUsd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -106,7 +84,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleStorage.sol": "SimpleStorage"
+			"contracts/FundMe.sol": "FundMe"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -120,12 +98,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SimpleStorage.sol": {
-			"keccak256": "0xabb685f518207b8c63a8a9a38224b37dd80ebd1b5feccfee967dd673a82c2540",
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://70db0cb897d1641c4b77da16a887a230dbd94517348d12f9f17f3ce3e94b0bf1",
-				"dweb:/ipfs/QmfStomrZBkdbQK7rhtu2kNMdLTWNqv4vawjo9kTtLWVcE"
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"contracts/FundMe.sol": {
+			"keccak256": "0x03728f3c722d3806a898119916f58c66213380e97a884ef5537ef3aab9c8c793",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a57e95ef8c3bb20a95fabb80653127759db3030e28b7c8d9b95d5709b49488e",
+				"dweb:/ipfs/QmZ6eyUVMPG5gLn6rmXVteXRwNPaHEXhhv4K4yLBXZKbxz"
 			]
 		}
 	},
