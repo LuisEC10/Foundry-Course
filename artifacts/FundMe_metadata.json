@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.31+commit.fd3a2265"
 	},
 	"language": "Solidity",
 	"output": {
@@ -79,6 +79,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getethprice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "i_owner",
 				"outputs": [
 					{
@@ -117,7 +130,7 @@
 		"compilationTarget": {
 			"contracts/FundMe.sol": "FundMe"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "osaka",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -138,11 +151,11 @@
 			]
 		},
 		"contracts/FundMe.sol": {
-			"keccak256": "0x4ec7b483c0e4826fed0bd6eeeb30028400fa9df0eed15f8f76135fd6aabe385e",
+			"keccak256": "0x8e4987da0d30091289832d1dc0dbd934fa5978a6390ba8efd778ee5a9080e0fd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7e134b009324a8d25159a8c60eafd4298bca87a42af626cd56b60ae11d634e92",
-				"dweb:/ipfs/Qmbk3j1jfjDBWeLMbkgYekXqFgf2Q6EP72vAhHxgrfjs9Q"
+				"bzz-raw://ef3411f6409a52f967b5f4db7a0640b70051fd95a3c5599f627fcc2f584fd662",
+				"dweb:/ipfs/QmewRPDnKyfh4r1GPBw7HKNJnZSr3ZeSD3b4jpd49bHp1Z"
 			]
 		},
 		"contracts/PriceConverter.sol": {

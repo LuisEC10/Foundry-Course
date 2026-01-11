@@ -31,6 +31,10 @@ contract FundMe {
         i_owner = msg.sender;
     }
 
+    function getethprice() public view returns(uint256){
+        return PriceConverter.getPrice();
+    }
+
     function fund() public payable {
         // Allow users to send $
         // Have a minimum $ sent $5
