@@ -16,6 +16,25 @@
 				"type": "error"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "votante",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "option",
+						"type": "uint256"
+					}
+				],
+				"name": "VotoEmitido",
+				"type": "event"
+			},
+			{
 				"stateMutability": "payable",
 				"type": "fallback"
 			},
@@ -128,11 +147,11 @@
 	},
 	"sources": {
 		"contracts/0. my projects/1.SmallVoting.sol": {
-			"keccak256": "0xdca1d2ee6e0e39b50685bae5b63322fea23cd1d37be28289eaad36ba0fdea3ea",
+			"keccak256": "0x1773eb14be5d7afbea34dbdff09ce9e98ad3183c62568f2841c0d7a6477dea5c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://74732122be7501bc9191ba4575ee57ce8ed991507d0df96058840373d6b86fc9",
-				"dweb:/ipfs/QmU1DUL3BSjDqGLfEN2WsxBrdJe9ntmduBvkHRG3k19etC"
+				"bzz-raw://9aad10ddb6dc86cbf63ccac90389e265f0a1660a84f2ecd9c96fd720ee547b13",
+				"dweb:/ipfs/QmQiZSBAW2rFR2ht5e7KvQRNEMLtCAX6J1UfcK48shxpt6"
 			]
 		}
 	},

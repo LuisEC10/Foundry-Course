@@ -17,6 +17,8 @@ contract SmallVoting {
     uint256 public totalAgainstVotes = 0;
     uint256 public blankVotes = 0;
 
+    event VotoEmitido(address indexed votante, uint option);
+
     function vote(uint _vote) public {
         if(votes[msg.sender].voted){
             revert AlreadyVoted();
@@ -33,6 +35,8 @@ contract SmallVoting {
         }else {
             revert NoValidOption();
         }
+
+        emit VotoEmitido(msg.sender, _vote);
     }
 
     function _castBlankVote() internal {
