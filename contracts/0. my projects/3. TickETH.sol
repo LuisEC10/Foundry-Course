@@ -38,7 +38,7 @@ contract TickETH {
             revert NotEnoughEth();
         }
         
-        users[msg.sender] += _numberOfTickets; // 100 -> 99 -> 98 -> ... -> 1 : The number of ticket is the "NTF"
+        users[msg.sender] += _numberOfTickets; // indicates how many tickets a user has
 
         totalTickets -= _numberOfTickets;
     }
