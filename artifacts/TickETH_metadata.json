@@ -12,6 +12,26 @@
 			},
 			{
 				"inputs": [],
+				"name": "FailedWithdraw",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "NoFunds",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "NoMoreTicketsAvailable",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "NotEnoughEth",
+				"type": "error"
+			},
+			{
+				"inputs": [],
 				"name": "NotOwner",
 				"type": "error"
 			},
@@ -21,7 +41,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "MINIMUM_USD",
+				"name": "TICKET_PRICE_USD",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -35,51 +55,19 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "addressToAmountFunded",
-				"outputs": [
-					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_numberOfTickets",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "fund",
+				"name": "buy",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "funders",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "getethprice",
+				"name": "getTicketPrice",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -105,9 +93,34 @@
 			},
 			{
 				"inputs": [],
-				"name": "withdraw",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "totalTickets",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -128,7 +141,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/1. Smart Contract Developer/FundMe.sol": "FundMe"
+			"contracts/0. my projects/3. TickETH.sol": "TickETH"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -150,12 +163,12 @@
 				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
 			]
 		},
-		"contracts/1. Smart Contract Developer/FundMe.sol": {
-			"keccak256": "0x8e4987da0d30091289832d1dc0dbd934fa5978a6390ba8efd778ee5a9080e0fd",
+		"contracts/0. my projects/3. TickETH.sol": {
+			"keccak256": "0x3997776768b27282723a548cca4419af7bfc958a3debef27fac0ffcc8373fa60",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ef3411f6409a52f967b5f4db7a0640b70051fd95a3c5599f627fcc2f584fd662",
-				"dweb:/ipfs/QmewRPDnKyfh4r1GPBw7HKNJnZSr3ZeSD3b4jpd49bHp1Z"
+				"bzz-raw://fa4841fa256883c8f4ea4b709fa348ea9c1e8584d0c98e10c55c7b43d266b286",
+				"dweb:/ipfs/QmfPxDV3B4PEAVpzCeUKbhYXtQK1YSGfSBz9wpwe3cSj5q"
 			]
 		},
 		"contracts/1. Smart Contract Developer/PriceConverter.sol": {
