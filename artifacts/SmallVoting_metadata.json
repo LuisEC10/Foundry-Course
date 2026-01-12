@@ -1,0 +1,140 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "AlreadyVoted",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "NoValidOption",
+				"type": "error"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "blankVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalAgainstVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalForVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_vote",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "votes",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "voted",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "vote",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/0. my projects/1.SmallVoting.sol": "SmallVoting"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/0. my projects/1.SmallVoting.sol": {
+			"keccak256": "0xdca1d2ee6e0e39b50685bae5b63322fea23cd1d37be28289eaad36ba0fdea3ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://74732122be7501bc9191ba4575ee57ce8ed991507d0df96058840373d6b86fc9",
+				"dweb:/ipfs/QmU1DUL3BSjDqGLfEN2WsxBrdJe9ntmduBvkHRG3k19etC"
+			]
+		}
+	},
+	"version": 1
+}
